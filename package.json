@@ -1,0 +1,25 @@
+{
+  "name": "learn-to-code",
+  "version": "0.0.1-alpha",
+  "description": "A little repo I can use to help my kids learn how to write software",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cohuebn/learn-to-code.git"
+  },
+  "author": {
+    "name": "Cory Huebner",
+    "email": "chuebner86@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cohuebn/learn-to-code/issues"
+  },
+  "homepage": "https://github.com/cohuebn/learn-to-code#readme",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
