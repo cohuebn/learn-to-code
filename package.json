@@ -4,7 +4,10 @@
   "description": "A little repo I can use to help my kids learn how to write software",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .ts",
+    "start": "ts-run ./src/index.ts",
+    "start:dev": "ts-run src/index.ts --watch"
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,10 @@
   },
   "homepage": "https://github.com/cohuebn/learn-to-code#readme",
   "devDependencies": {
-    "typescript": "^4.8.4"
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
+    "eslint": "^8.27.0",
+    "typescript": "^4.8.4",
+    "typescript-run": "^0.1.1"
   }
 }
