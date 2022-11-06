@@ -10,11 +10,11 @@ import {
 } from "./types";
 
 describe("variables", () => {
-  it("should be able to make hello", () => {
+  it("should be able to make a string starting with 'hello'", () => {
     expect(makeAString()).toMatch(/^hello/i);
   });
 
-  it("should be able to make a whole number", () => {
+  it("should be able to make a whole number greater than 10", () => {
     expect(makeAWholeNumber()).toBeGreaterThan(10);
   });
 
@@ -32,21 +32,20 @@ describe("variables", () => {
     expect(makeAFalseBoolean()).toBe(true);
   });
 
-  it("should be able to make an object", () => {
+  it("should be able to make an object with the property woogie=boogie", () => {
     expect(makeAnObject()).toHaveProperty("woogie", "boogie");
   });
 
-  it("should be able to make a string array", () => {
-    expect(makeAStringArray).toContainEqual([1, 3, 5]);
+  it("should be able to make a string array with at least 1, 3, and 5", () => {
+    expect(makeAStringArray).toContain([1, 3, 5]);
   });
 
-  it("should be able to make an object array", () => {
+  it("should be able to make array with 2 objects. 1 object should be a dog=sophia whose favoriteFood=bacon", () => {
     const result = makeAnObjectArray();
     expect(result).toBeDefined();
     if (result) {
       expect(result).toHaveLength(2);
       expect(result[0]).toEqual({ dog: "sophia", favoriteFood: "bacon" });
-      expect(result[1]).toEqual({ dog: "bama", favoriteFood: "dog food" });
     }
   });
 });
