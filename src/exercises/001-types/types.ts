@@ -31,33 +31,40 @@ export function example() {
 }
 
 export function makeAString(): string | undefined {
-  return;
+  return "hello, johnny boy";
 }
 
 export function makeAWholeNumber(): number | undefined {
-  return;
+  return 12;
 }
 
 export function makeADecimalNumber(): number | undefined {
-  return;
+  return 1.234;
 }
 
 export function makeATrueBoolean(): boolean | undefined {
-  return;
+  return true;
 }
 
 export function makeAFalseBoolean(): boolean | undefined {
-  return;
+  return false;
 }
 
 export function makeAnObject(): object | undefined {
-  return;
+  return { woogie: "boogie", choco: "mama" };
 }
 
-export function makeAStringArray(): string[] | undefined {
-  return;
+export function makeANumberArray(): number[] {
+  return [1, 2, 3, 4, 5];
 }
 
-export function makeAnObjectArray(): string[] | undefined {
-  return;
+type Dog = {
+  name: string;
+  favoriteFood: string;
+};
+export function makeAnObjectArray(): Dog[] {
+  return [
+    { name: "sophia", favoriteFood: "bacon" },
+    { name: "scooby", favoriteFood: "scooby snacks" },
+  ];
 }
