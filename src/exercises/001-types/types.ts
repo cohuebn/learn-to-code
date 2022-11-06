@@ -54,10 +54,15 @@ export function makeAnObject(): object | undefined {
   return;
 }
 
-export function makeAStringArray(): string[] | undefined {
-  return;
+export function makeANumberArray(): number[] {
+  return [];
 }
 
-export function makeAnObjectArray(): string[] | undefined {
-  return;
+type Dog = {
+  name: string;
+  favoriteFood: string;
+};
+
+export function makeAnObjectArray(): Dog[] {
+  return [];
 }
