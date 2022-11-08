@@ -1,12 +1,12 @@
-import { helloConst, murtle, sayHello } from "./functions-and-variables";
+import { hello, murtle, sayHello } from "./functions-and-variables";
 
 describe("functions and variables", () => {
   it("should be able to export a constant string that starts with hello", () => {
-    expect(helloConst).toMatch(/hello/i);
+    expect(hello).toMatch(/hello/i);
   });
 
-  it("should be able to export a constant object with murtle=theturtle", () => {
-    expect(murtle).toHaveProperty("murtle", "theturtle");
+  it("should be able to export a constant object name murtle with the=turtle", () => {
+    expect(murtle).toHaveProperty("the", "turtle");
   });
 
   describe("sayHello", () => {

@@ -31,31 +31,31 @@ export function example() {
 }
 
 export function makeAString(): string | undefined {
-  return;
+  return "hello johnny!";
 }
 
 export function makeAWholeNumber(): number | undefined {
-  return;
+  return 12;
 }
 
 export function makeADecimalNumber(): number | undefined {
-  return;
+  return 1.23;
 }
 
 export function makeATrueBoolean(): boolean | undefined {
-  return;
+  return true;
 }
 
 export function makeAFalseBoolean(): boolean | undefined {
-  return;
+  return false;
 }
 
 export function makeAnObject(): object | undefined {
-  return;
+  return { woogie: "boogie" };
 }
 
 export function makeANumberArray(): number[] {
-  return [];
+  return [1, 2, 3, 4, 5];
 }
 
 type Dog = {
@@ -64,5 +64,8 @@ type Dog = {
 };
 
 export function makeAnObjectArray(): Dog[] {
-  return [];
+  return [
+    { name: "sophia", favoriteFood: "bacon" },
+    { name: "buster", favoriteFood: "ham sammys" },
+  ];
 }
