@@ -64,5 +64,8 @@ type Dog = {
 };
 
 export function makeAnObjectArray(): Dog[] {
-  return [];
+  return [
+    { name: "sophia", favoriteFood: "bacon" },
+    { name: "cookie", favoriteFood: "ham" },
+  ];
 }
