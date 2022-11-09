@@ -10,10 +10,16 @@ describe("functions and variables", () => {
   });
 
   describe("sayHello", () => {
-    ["Jimmy Dean", "Banana", "Butterfly"].forEach((name) => {
-      it(`should say hello to ${name}`, () => {
-        expect(sayHello(name)).toEqual(`Hello ${name}`);
-      });
+    it(`should say hello to Jimmy Dean`, () => {
+      expect(sayHello("Jimmy Dean")).toEqual("Hello Jimmy Dean");
+    });
+
+    it(`should say hello to Banana`, () => {
+      expect(sayHello("Banana")).toEqual("Hello Banana");
+    });
+
+    it(`should say hello to Butterfly`, () => {
+      expect(sayHello("Butterfly")).toEqual("Hello Butterfly");
     });
   });
 });
