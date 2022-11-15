@@ -1,3 +1,4 @@
+// import { addThreeNumbers, hasMoreThanThreeLetters } from "./more-functions";
 import { addThreeNumbers } from "./more-functions";
 
 describe("more functions", () => {
@@ -15,17 +16,17 @@ describe("more functions", () => {
     });
   });
 
-  describe("hasMoreThanThreeLetters", () => {
-    it("should return false for uno", () => {
-      expect(hasMoreThanThreeLetters("uno")).toBe(false);
-    });
+  // describe("hasMoreThanThreeLetters", () => {
+  //   it("should return false for uno", () => {
+  //     expect(hasMoreThanThreeLetters("uno")).toBe(false);
+  //   });
 
-    it("should return false for 'to'", () => {
-      expect(hasMoreThanThreeLetters("to")).toBe(false);
-    });
+  //   it("should return false for 'to'", () => {
+  //     expect(hasMoreThanThreeLetters("to")).toBe(false);
+  //   });
 
-    it("should return true for banana", () => {
-      expect(hasMoreThanThreeLetters("banana")).toBe(true);
-    });
-  });
+  //   it("should return true for banana", () => {
+  //     expect(hasMoreThanThreeLetters("banana")).toBe(true);
+  //   });
+  // });
 });
