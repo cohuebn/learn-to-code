@@ -6,3 +6,7 @@ export function addThreeNumbers(
 ) {
   return banana2 + banana5 + banana900;
 }
+
+export function levisBananaFactory(banana: number): boolean {
+  return banana % 10 === 0;
+}
