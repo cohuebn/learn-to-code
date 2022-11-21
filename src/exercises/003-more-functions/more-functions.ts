@@ -6,3 +6,7 @@ export function addThreeNumbers(
 ) {
   return doggie1 + doggie3 + doggie4;
 }
+
+export function hasMoreThanThreeLetters(sit: string): boolean {
+  return sit.length > 3;
+}
