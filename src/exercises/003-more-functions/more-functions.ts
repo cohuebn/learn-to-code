@@ -6,3 +6,7 @@ export function addThreeNumbers(
 ) {
   return banana2 + banana5 + banana900;
 }
+
+export function hasMoreThanThreeLetters(banana90000: string): boolean {
+  return banana90000.length > 3;
+}
